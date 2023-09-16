@@ -22,4 +22,9 @@ private myurl:string;
   kepbeolvas(){
     return this.myhttp.get("https://jsonplaceholder.typicode.com/photos");
   }
+  //posztolása a beviteli mezöknek
+  bekuldes(adat:any){
+    let url="https://oraimunka-a8bc0-default-rtdb.firebaseio.com/"
+    this.myhttp.post(url+"user12.json",adat).subscribe();
+  }
 }

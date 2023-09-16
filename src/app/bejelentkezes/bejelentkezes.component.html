@@ -1,14 +1,24 @@
-<section>
+<div>
 
+<form [formGroup]="myform" (ngSubmit)="kuldes()">
     <mat-form-field >
-        <mat-label>First name</mat-label>
-        <input matInput type="text" placeholder="Minta Pista">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" 
+        formControlName="name"
+        placeholder="Minta Pista">
     </mat-form-field>
     <br>
         <mat-form-field >
             <mat-label>E-mail</mat-label>
-            <input matInput type="email" placeholder="Minta@minta.com">
+            <input matInput type="email" 
+            formControlName="email"
+            placeholder="Minta@minta.com">
+            <mat-error *ngIf="mail.invalid && mail.touched">
+                8 általános megvan
+            </mat-error>
         </mat-form-field>
     <br>
-    <button mat-raised-button>Nyomjad more</button>
-</section>
+    <button mat-raised-button
+    [disabled]="myform.invalid">Nyomjad more</button>
+</form>
+</div>
