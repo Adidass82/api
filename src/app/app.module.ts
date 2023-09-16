@@ -18,6 +18,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from '@angular/common/http';
 import { HivasokService, alapurl } from './services/hivasok.service';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
 
 export function geturl(): string{
   return "https://jsonplaceholder.typicode.com"
@@ -42,6 +45,10 @@ export function geturl(): string{
     MatButtonModule,
     MatDividerModule,
     MatIconModule,
+    MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [

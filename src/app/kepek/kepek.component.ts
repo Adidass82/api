@@ -8,8 +8,8 @@ import{HivasokService}from "../services/hivasok.service"
 export class KepekComponent {
   data: any;
   constructor(private apihivas:HivasokService){
-  this.apihivas.kepbeolvas().subscribe(result=>{
-  this.data=result;
+  this.apihivas.beolvas().subscribe(res=>{
+  this.data=res;
 })
 }
 }

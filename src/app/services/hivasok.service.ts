@@ -20,6 +20,6 @@ private myurl:string;
   }
   // egyszerübb modja a beolvasásnak
   kepbeolvas(){
-    return this.myhttp.get("https://jsonplaceholder.typicode.com/photos")
+    return this.myhttp.get("https://jsonplaceholder.typicode.com/photos");
   }
 }
