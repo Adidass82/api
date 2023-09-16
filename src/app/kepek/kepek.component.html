@@ -1,0 +1,16 @@
+<section>
+    <table>
+        <thead>
+            <tr>
+                <th>név</th>
+                <th>minta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngfor="let item of data" >
+                <td>{{item.title}}</td>
+                <td><img src="{{item.thumbnailUrl}}"></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
